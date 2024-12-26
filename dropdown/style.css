@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+nav {
+  display: none;
+}
+.visible {
+  display: block;
+  border-right: 2px solid black;
+}
