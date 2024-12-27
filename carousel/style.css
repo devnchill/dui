@@ -7,18 +7,37 @@ html,
 body {
   height: 100%;
 }
-#__img_container {
-  position: absolute;
-  top: 25%;
-  width: 100%;
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: auto 10px;
+  align-content: center;
+  gap: 30px;
+}
+#__wrapper {
+  width: 500px;
   height: 500px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+#__img_row {
   display: flex;
+  position: relative;
+  left: 0;
+}
+.image {
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+}
+#__nav_btn {
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
-
-  > div {
-    text-align: center;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 40px;
+  > button {
+    height: 80%;
+    width: 80px;
   }
 }
