@@ -24,12 +24,18 @@ body {
 #__img_row {
   display: flex;
   position: relative;
+  width: 2500px;
   left: 0;
 }
 .image {
   width: 500px;
   height: 500px;
   flex-shrink: 0;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 #__nav_btn {
   display: flex;
@@ -39,5 +45,25 @@ body {
   > button {
     height: 80%;
     width: 80px;
+  }
+}
+#__nav_dots {
+  display: flex;
+  justify-content: space-around;
+  > button {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+  }
+  button:active,
+  button:focused {
+    background-color: red;
+  }
+  button:hover {
+    background-color: black;
+  }
+  button.active {
+    background-color: purple;
   }
 }
